@@ -6,6 +6,8 @@
  * Author: Thomas Villain - Anybodesign
  * Author URI: http://anybodesign.com/
  * License: GPL2
+ * Text Domain: black-ribbon
+ * Domain Path: /languages/
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -36,7 +38,7 @@ define('BLKR_VERSION', '1.0');
 
 // i18n
 
-load_plugin_textdomain( 'black-ribbon', false, basename( dirname( __FILE__ ) ) . '/languages' );
+load_plugin_textdomain( 'black-ribbon', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 
 
 /* ------------------------------------------
