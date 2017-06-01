@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Black Ribbon
+ * Plugin Name: AD Black Ribbon
  * Description: Display a black ribbon in the upper right corner of your website. In memory of the victims of terrorism (Paris, Beirut...). 
- * Version: 1.0
+ * Version: 1.1
  * Author: Thomas Villain - Anybodesign
  * Author URI: http://anybodesign.com/
  * License: GPL2
@@ -34,8 +34,8 @@ defined('ABSPATH') or die();
 
 
 define('BLKR_PATH', WP_PLUGIN_URL . '/' . plugin_basename( dirname(__FILE__) ) . '/' );
-define('BLKR_NAME', 'Black Ribbon');
-define('BLKR_VERSION', '1.0');
+define('BLKR_NAME', 'AD Black Ribbon');
+define('BLKR_VERSION', '1.1');
 
 
 // i18n
@@ -53,21 +53,22 @@ function print_blkr_css() {
 print '<style>
 html:before {
 	content: "";
-	display: block;	height: 20px; width: 120px;
-	position: fixed; top: 25px; right: -25px;
+	display: block;	
+	height: 10px; 
+	width: 120px;
+	position: fixed; 
+	top: 10px; 
+	right: -35px;
 	background-color: black;
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	z-index: 999;
 }
-
-@media screen and (max-width: 580px) {
-
+@media screen and (min-width: 580px) {
 	html:before {
-		height: 10px;
-		top: 10px; right: -35px;
+		height: 20px;
+		top: 25px;
+		right: -25px;
 	}
 }
 </style>';
