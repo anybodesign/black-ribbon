@@ -4,7 +4,8 @@
  * Description: Display a black ribbon in the upper right corner of your website. In memory of the victims of terrorism (Paris, Beirut...). 
  * Version: 1.1
  * Author: Thomas Villain - Anybodesign
- * Author URI: http://anybodesign.com/
+ * Author URI: https://anybodesign.com/
+ * Plugin URI: https://github.com/anybodesign/black-ribbon
  * License: GPL2
  * Text Domain: black-ribbon
  * Domain Path: /languages/
