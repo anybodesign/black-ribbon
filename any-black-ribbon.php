@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: AD Black Ribbon
- * Description: Display a black ribbon in the upper right corner of your website. In memory of the victims of terrorism (Paris, Beirut...). 
- * Version: 1.1
+ * Description: Display a black ribbon in the upper right corner of your website. In memory of the victims of terrorism all over the world. 
+ * Version: 1.2
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Plugin URI: https://github.com/anybodesign/black-ribbon
@@ -36,7 +36,7 @@ defined('ABSPATH') or die();
 
 define('BLKR_PATH', WP_PLUGIN_URL . '/' . plugin_basename( dirname(__FILE__) ) . '/' );
 define('BLKR_NAME', 'AD Black Ribbon');
-define('BLKR_VERSION', '1.1');
+define('BLKR_VERSION', '1.2');
 
 
 // i18n
@@ -75,3 +75,18 @@ html:before {
 </style>';
 }
 add_action('wp_head', 'print_blkr_css', 100);
+
+
+
+/* ------------------------------------------
+// Auto Update  -----------------------------
+--------------------------------------------- */ 
+
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/anybodesign/black-ribbon',
+	__FILE__,
+	'black-ribbon'
+);
+$myUpdateChecker->setBranch('master');
+
