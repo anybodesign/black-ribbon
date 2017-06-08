@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AD Black Ribbon
  * Description: Display a black ribbon in the upper right corner of your website. In memory of the victims of terrorism all over the world. 
- * Version: 1.2
+ * Version: 1.2.1
  * Author: Thomas Villain - Anybodesign
  * Author URI: https://anybodesign.com/
  * Plugin URI: https://github.com/anybodesign/black-ribbon
@@ -52,7 +52,7 @@ load_plugin_textdomain( 'black-ribbon', false, basename( dirname( __FILE__ ) ) .
 function print_blkr_css() {
  
 print '<style>
-html:before {
+html::before {
 	content: "";
 	display: block;	
 	height: 10px; 
@@ -66,7 +66,7 @@ html:before {
 	z-index: 999;
 }
 @media screen and (min-width: 580px) {
-	html:before {
+	html::before {
 		height: 20px;
 		top: 25px;
 		right: -25px;
