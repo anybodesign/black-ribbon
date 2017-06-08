@@ -36,7 +36,7 @@ defined('ABSPATH') or die();
 
 define('BLKR_PATH', WP_PLUGIN_URL . '/' . plugin_basename( dirname(__FILE__) ) . '/' );
 define('BLKR_NAME', 'AD Black Ribbon');
-define('BLKR_VERSION', '1.2');
+define('BLKR_VERSION', '1.2.1');
 
 
 // i18n
